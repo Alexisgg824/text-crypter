@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <img class="alura_logo" src="images/logo.svg" alt="Logo Alura">
+        </header>
+    </section>
+
+    <main>
+        <section id="text_encrypter">
+            <div class="text_box">
+                <textarea class="text" name="text" id="text" placeholder="Ingresa el texto..."></textarea>
+            </div>
+            <div class="alert">
+                <span class="info__alert"><img src="images/signe.svg" alt="Alert">
+                    Solo letras minúsculas y sin acentos
+                </span>
+            </div>
+            <div class="buttons">
+                <button class="button_encrypt" type="button" onclick="encrypt()">Encriptar</button>
+                <button class="button_decrypt" type="button" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <div class="box_result">
+            <div class="doll_image">
+                <img src="images/Munheco.svg" alt="Persona buscando diamante" id="doll"> 
+            </div>
+            <div class="result_text" id="result_text">
+                <h2 id="empty">Ningún mensaje fue encontrado</h2>
+                <p id="specify">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </main> 
+    <footer class="section__footer">
+        <article class="article__footer">
+          <h4>
+            <span> © 2023 - </span>
+            Desarrollado por Alexis Gallegos
+          </h4>
+          <ul class="list">
+            <li>
+              <a href="https://www.linkedin.com/in/alexis-gallegos-gonzalez/" target="_blank">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Alexisgg824" target="_blank">
+                <i class="bx bxl-github"></i><x-bxl-linkedin />
+              </a>
+            </li>
+          </ul>
+        </article>
+      </footer>
+    <script src="index.js"></script>    
+</body>
+</html>
